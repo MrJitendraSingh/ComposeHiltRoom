@@ -11,5 +11,4 @@ abstract class BaseViewModel(open val appDataManager: AppDataManager) : ViewMode
         Toast.makeText(appDataManager.context, message, Toast.LENGTH_SHORT).show()
     }
 
-
 }
