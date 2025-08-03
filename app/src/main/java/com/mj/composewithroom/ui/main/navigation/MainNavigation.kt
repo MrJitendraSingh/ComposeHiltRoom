@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.mj.composewithroom.ui.main.add.AddVehicleScreen
 import com.mj.composewithroom.ui.main.home.HomeScreen
 
 @Composable
@@ -39,9 +40,8 @@ fun MainNavigation (navController: NavHostController = rememberNavController()) 
             )
         }
     ) {
-        composable(MainScreenRoute.HomeScreen.route) {
-            HomeScreen(navController)
-        }
+        composable(MainScreenRoute.HomeScreen.route) { HomeScreen(navController) }
+        composable(MainScreenRoute.AddVehicleScreen.route) { AddVehicleScreen(navController) }
     }
 
 }
